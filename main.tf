@@ -20,3 +20,13 @@ module "security" {
 
   vpc_id = module.network.vpc_id
 }
+
+module "compute" {
+  source = "./modules/compute"
+
+  vpc_id = module.network.vpc_id
+  private_subnets_ids = module.network.private_subnet_ids
+  public_subnets_ids = module.network.public_subnet_ids
+  alb_security_group_id = module.security.alb_security_group_id
+  
+}

@@ -195,3 +195,4 @@ additional cost by themselves.
   subnet ranges are currently hardcoded); parameterizing these via
   `variables.tf` is a natural next step for reusability across environments
   (dev/staging/prod).
+  
