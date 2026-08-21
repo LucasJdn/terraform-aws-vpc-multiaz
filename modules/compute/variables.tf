@@ -8,6 +8,11 @@ variable "alb_security_group_id" {
   type        = string
 }
 
+variable "instance_security_group_id" {
+  description = "ID SG INSTANCE"
+  type        = string
+}
+
 variable "public_subnets_ids"{
     description = "ID from Public subnets"
     type = list(string)
